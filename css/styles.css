@@ -1,3 +1,7 @@
+/* Hide .lazy elements if JavaScript is off */
+.no-js .lazy {
+  display: none;
+}
 
 .sidebar {
     font-family: 'Harman Simple';
@@ -23,6 +27,10 @@
 .sidebar a:hover {
     color: #C0C0C0;
     border-bottom: 2px solid #ecf0f1;
+}
+
+.sidebar-link {
+    outline: none;
 }
 
 .sidebar a.active {
@@ -56,6 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    image-orientation: from-image;
 }
 
 .portrait{
