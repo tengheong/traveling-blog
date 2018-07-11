@@ -19,8 +19,3 @@
         }
     });
 }(jQuery));
-
-//Grid motions
-$(document).ready(function(){
-
-});
