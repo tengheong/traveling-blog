@@ -76,3 +76,41 @@ ul:before{
     font-size: 130%;
     font-weight: bold;
 }
+
+.background {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.background > h2 {
+    top: 40%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.background > h3 {
+    top: 60%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.background > p {
+    top: 70%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.background:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
