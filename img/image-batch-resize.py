@@ -10,7 +10,7 @@ import os
 import fnmatch
 
 # Setup
-destinations = [('resized-header', 2500)]
+destinations = [('test', 42)]
 
 for destination, _ in destinations:
     if not os.path.exists(destination):
