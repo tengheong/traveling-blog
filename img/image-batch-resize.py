@@ -10,7 +10,7 @@ import os
 import fnmatch
 
 # Setup
-destinations = [('resized-header', 3000)]
+destinations = [('resized-header', 2500)]
 
 for destination, _ in destinations:
     if not os.path.exists(destination):
@@ -18,7 +18,7 @@ for destination, _ in destinations:
 
 # Compile list of images to resize
 imgs = []
-for root, dirnames, filenames in os.walk('header'):
+for root, dirnames, filenames in os.walk('.'):
     for filename in fnmatch.filter(filenames, '*.jpg'):
         imgs.append(os.path.join(root, filename))
 
